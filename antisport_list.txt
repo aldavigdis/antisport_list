@@ -1,0 +1,26 @@
+! © 2017 Alda Vigdis Skarphedinsdóttir
+!
+! Provided under the terms and conditions of the Creative Commons
+! Attribution-NonCommercial-ShareAlike 4.0 International license.
+! Read more at https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+! ruv.is: Hides sports from feed on the front page for
+ruv.is##.view-frettastraumur .views-row:has(a[href="/ithrottir"])
+ruv.is##.sf-main-menu a[href="/ithrottir"]
+
+! visir.is: Hides menu items and most sports news from front page
+!
+! Live coverage and radio programme clips are very often categorised as
+! something else, for example X-ið.
+www.visir.is##.df-skin-3sport
+www.visir.is##.tabs__content .article-item:has(.badge--tag.-sport)
+www.visir.is##.row:has(.category-title.-sport)
+www.visir.is##.row:has(.article-item--main .badge.badge--tag.-sport)
+www.visir.is##.main-menu__category.-sport
+www.visir.is##.mobile-nav__item.-sport
+www.visir.is##.article-item.-sport
+www.visir.is##.tabs__selectors .-sport
+
+! mbl.is: Hides sports from main menu and front page
+www.mbl.is##.teaser:has(a[href^="/sport"])
+www.mbl.is###menu a[href="/sport/"]
